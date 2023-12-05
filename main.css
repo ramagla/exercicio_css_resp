@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#sobre img  {
+    max-width: 400px;
+    padding: 16px 0;
+}
+
+section {
+    padding: 48px 0 ;
+}
+
+sectio h2 {
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.coluna {
+    width: 35%;
+    vertical-align: top;
+    align-items: flex-start;
+}
+
+.coluna img {
+    width: 100%;
+    height: auto;
+}
+
+.coluna h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.coluna p {
+    font-size: 16px;
+    margin: 10px 0;
+    overflow-wrap: break-word; /* Esta é a propriedade que faz o texto quebrar */
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    width: 23%;
+    margin: 10px 0;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    
+}
+
+.produto p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.produto button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .coluna {
+        width: 100%;
+    }
+
+    .produto {
+        width: 48%;
+    }
+}
